@@ -1,0 +1,33 @@
+{
+  "name": "PaySpace Buyer Agent",
+  "description": "Campaign manager agent. Discovers ad placements, negotiates rates with seller agents, verifies creative delivery, streams off-chain payment tickets, and manages cooperative close or dispute.",
+  "url": "__A2A_URL__",
+  "pubkey": "__PUBKEY__",
+  "provider": {
+    "organization": "PaySpace",
+    "url": "https://payspace.io"
+  },
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "authentication": {
+    "schemes": ["Bearer"]
+  },
+  "defaultInputModes": ["application/json"],
+  "defaultOutputModes": ["application/json"],
+  "skills": [
+    {
+      "id": "coop-close-proposal",
+      "name": "Cooperative close proposal",
+      "description": "Receives a cooperative channel close request from the seller. Verifies the proposed UDT split matches the last acknowledged payment ticket and that the channel is still open. Signs the coop close transaction and submits it on-chain.",
+      "tags": ["payment", "channel", "close"],
+      "examples": [
+        "Proposing coop close: seller_udt=45000, buyer_udt=55000, coop_signing_message=0x..."
+      ],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    }
+  ]
+}

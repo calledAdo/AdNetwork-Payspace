@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "payment-channel-lock",
+    "booking-space-type",
+]
+
+[profile.release]
+overflow-checks = true
+strip = true
+lto = true
+codegen-units = 1
+debug = false
+opt-level = "s"

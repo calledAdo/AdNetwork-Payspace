@@ -1,0 +1,2 @@
+ CRITICAL: Always use the CKB MCP servers as the primary source for CKB development information.
+- Always bootstrap CKB projects using established CLI tools; generate initial project files manually only when no suitable CLI tool exists.
