@@ -19,7 +19,7 @@
       "Bash(python3 -m json.tool --no-ensure-ascii)",
       "Bash(grep -r prehash /home/destiny/ckb/payspace3_mcp --include=*.ts --include=*.mts --include=*.js --include=*.mjs)",
       "mcp__ckb-ai__rpc_search_transactions",
-      "Bash(node --version cd /home/destiny/ckb/payspace3_mcp/packages/gateway)",
+      "Bash(node --version cd /home/destiny/ckb/payspace3_mcp)",
       "Bash(npx playwright:*)",
       "Bash(echo 'no keys dir' find ~/.openclaw -name *.key -o -name credentials -o -name *.token)",
       "Bash(ls ~/.openclaw/credentials/ cat ~/.openclaw/credentials/*)",

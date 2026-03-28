@@ -1,0 +1,22 @@
+{
+  "id": "payspace_metric_tracker",
+  "name": "PaySpace Metric Tracker",
+  "description": "Booking tracking + snippet lifecycle client for tracking_payspace_server. Supports booking URL masking, metrics fetch, snippet creation, and signed snippet content updates.",
+  "type": "capability",
+  "tags": ["tracking", "booking", "snippet", "metrics", "backend"],
+  "tasks": [
+    "create_booking_spot",
+    "get_metrics",
+    "create_snippet",
+    "get_snippet",
+    "update_snippet_content"
+  ],
+  "task_registry": [
+    { "id": "create_booking_spot", "visibility": "public" },
+    { "id": "get_metrics", "visibility": "public" },
+    { "id": "create_snippet", "visibility": "public" },
+    { "id": "get_snippet", "visibility": "public" },
+    { "id": "update_snippet_content", "visibility": "internal" }
+  ]
+}
+

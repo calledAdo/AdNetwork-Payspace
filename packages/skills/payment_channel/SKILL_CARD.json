@@ -1,0 +1,29 @@
+{
+  "id": "payment_channel",
+  "name": "Payment Channel",
+  "description": "CKB off-chain payment-channel protocol. Opens channels, signs tickets, handles cooperative close, disputes, and payout claims.",
+  "type": "protocol",
+  "tags": ["payment", "channel", "settlement", "tickets", "CKB"],
+  "tasks": [
+    "build_open_channel",
+    "check_channel_liveness",
+    "sign_payment_ticket",
+    "receive_signed_ticket",
+    "request_cooperative_close_signature",
+    "respond_cooperative_close_signature",
+    "build_cooperative_close",
+    "build_dispute",
+    "build_payout"
+  ],
+  "task_registry": [
+    { "id": "build_open_channel", "visibility": "public" },
+    { "id": "check_channel_liveness", "visibility": "public" },
+    { "id": "sign_payment_ticket", "visibility": "internal" },
+    { "id": "receive_signed_ticket", "visibility": "internal" },
+    { "id": "request_cooperative_close_signature", "visibility": "internal" },
+    { "id": "respond_cooperative_close_signature", "visibility": "internal" },
+    { "id": "build_cooperative_close", "visibility": "internal" },
+    { "id": "build_dispute", "visibility": "internal" },
+    { "id": "build_payout", "visibility": "internal" }
+  ]
+}

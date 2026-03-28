@@ -1,0 +1,16 @@
+{
+  "required": [
+    { "name": "native_signer", "source": "skills/native_signer" },
+    { "name": "asset_manager", "source": "skills/asset_manager" },
+    { "name": "memory_manager", "source": "skills/memory_manager" },
+    { "name": "payment_channel", "source": "skills/payment_channel" },
+    { "name": "slot_v1", "source": "skills/slot_v1" }
+  ],
+  "optional": [
+    { "name": "messaging", "source": "skills/messaging" },
+    { "name": "payspace_metric_tracker", "source": "skills/payspace_metric_tracker" }
+  ],
+  "counterparty_required": [
+    "payment_channel"
+  ]
+}

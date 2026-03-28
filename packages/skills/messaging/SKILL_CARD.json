@@ -1,0 +1,13 @@
+{
+  "id": "messaging",
+  "name": "Messaging",
+  "description": "Agent-agnostic A2A messaging helpers for slot details requests, placement negotiation, and campaign handoff.",
+  "type": "protocol",
+  "tags": ["a2a", "messaging", "negotiation", "handoff"],
+  "tasks": [
+    "send_a2a"
+  ],
+  "task_registry": [
+    { "id": "send_a2a", "visibility": "public" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "slot_v1",
+  "name": "Slot v1",
+  "description": "BookingSpace on-chain slot lifecycle builders for publish/book/unbook flows.",
+  "type": "protocol",
+  "tags": [
+    "adspace",
+    "placement",
+    "slot",
+    "BookingSpace",
+    "CKB"
+  ],
+  "tasks": [
+    "build_publish_slot",
+    "build_lock_slot",
+    "build_free_slot"
+  ],
+  "task_registry": [
+    { "id": "build_publish_slot", "visibility": "internal" },
+    { "id": "build_lock_slot", "visibility": "internal" },
+    { "id": "build_free_slot", "visibility": "internal" }
+  ]
+}

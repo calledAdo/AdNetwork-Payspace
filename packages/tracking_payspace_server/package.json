@@ -1,0 +1,28 @@
+{
+  "name": "tracking_payspace_server",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "tsx scripts/pluginization.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "PaySpace tracking server — booking/snippet metrics service",
+  "dependencies": {
+    "@noble/curves": "^2.0.1",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "openai": "^6.32.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

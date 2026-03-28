@@ -1,0 +1,21 @@
+{
+  "id": "native_signer",
+  "name": "Native Signer",
+  "description": "Local secp256k1 key and signing utilities: derive blake160, generate keypairs, sign transaction messages, and build-sign-submit convenience.",
+  "type": "capability",
+  "tags": ["signing", "secp256k1", "transaction"],
+  "tasks": [
+    "derive_blake160",
+    "gen_keypair",
+    "sign_transaction_message",
+    "signee",
+    "build_sign_submit"
+  ],
+  "task_registry": [
+    { "id": "derive_blake160", "visibility": "public" },
+    { "id": "gen_keypair", "visibility": "public" },
+    { "id": "sign_transaction_message", "visibility": "internal" },
+    { "id": "signee", "visibility": "internal" },
+    { "id": "build_sign_submit", "visibility": "internal" }
+  ]
+}

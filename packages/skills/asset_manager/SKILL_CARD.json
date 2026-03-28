@@ -1,0 +1,17 @@
+{
+  "id": "asset_manager",
+  "name": "Asset Manager",
+  "description": "Builds CKB and xUDT transfer transactions for owner-directed withdrawals and treasury movement.",
+  "type": "capability",
+  "tags": ["asset", "withdrawal", "transfer", "CKB", "xUDT"],
+  "tasks": [
+    "build_withdraw_ckb",
+    "build_withdraw_token",
+    "build_withdraw_to_owner"
+  ],
+  "task_registry": [
+    { "id": "build_withdraw_to_owner", "visibility": "public" },
+    { "id": "build_withdraw_ckb", "visibility": "internal" },
+    { "id": "build_withdraw_token", "visibility": "internal" }
+  ]
+}

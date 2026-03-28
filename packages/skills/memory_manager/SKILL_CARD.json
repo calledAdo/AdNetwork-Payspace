@@ -1,0 +1,21 @@
+{
+  "id": "memory_manager",
+  "name": "Memory Manager",
+  "description": "Schema-validated workspace state management with atomic persistence helpers.",
+  "type": "capability",
+  "tags": ["memory", "state", "persistence", "schema"],
+  "tasks": [
+    "initialize_workspace_memory",
+    "validate_memory_schema",
+    "upsert_slot_record",
+    "upsert_placement_record",
+    "append_conversation_event"
+  ],
+  "task_registry": [
+    { "id": "initialize_workspace_memory", "visibility": "internal" },
+    { "id": "validate_memory_schema", "visibility": "internal" },
+    { "id": "upsert_slot_record", "visibility": "internal" },
+    { "id": "upsert_placement_record", "visibility": "internal" },
+    { "id": "append_conversation_event", "visibility": "internal" }
+  ]
+}

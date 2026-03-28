@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Thin wrapper: mint xUDT (CCC KnownScript.XUdt) and print JSON for .env.
+# Real implementation: packages/ckb_payspace_mcp/scripts/deploy_xudt.mts
+#
+# Usage:
+#   ./scripts/deploy-xudt
+#   ./scripts/deploy-xudt --dry-run
+#   ./scripts/deploy-xudt --machine-json [--dry-run]
+#
+# Requires repo-root .env with CKB_RPC_URL and CKB_PRIVATE_KEY (see .testnet.env).
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${ROOT}/packages/ckb_payspace_mcp"
+exec npx tsx scripts/deploy_xudt.mts "$@"

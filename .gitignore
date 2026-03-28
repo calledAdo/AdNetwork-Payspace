@@ -1,37 +1,58 @@
-# Dependencies
+# Dependencies (any depth)
 node_modules/
-packages/*/node_modules/
 
 # Build output
 dist/
-packages/*/dist/
 dist-ssr/
+packages/*/dist/
+*.tsbuildinfo
 
-# Runtime data and generated workspaces
-data/
-packages/payspace_backend/data/
-packages/gateway/agent-workspaces/
-packages/gateway/.openclaw/
-packages/gateway/playwright-output/
+# Rust
 contracts/target/
+
+# Runtime data and local agent / tool output
+data/
+packages/tracking_payspace_server/data/
+/agent-workspaces/
+/playwright-output/
+packages/playwright_server/playwright-output/
+
+# Playwright test-runner artifacts (distinct from PLAYWRIGHT_OUTPUT_DIR sidecar dumps)
+test-results/
+playwright-report/
+blob-report/
+
+# Tests — coverage tools; integration harness directory is local-only
+coverage/
+.nyc_output/
+tests/
 
 # Local env and tool state
 .env
 .env.*
 !.env.example
+
+# OpenClaw: ignore generated state; allow a minimal committed config if desired
 .openclaw/*
 !.openclaw/openclaw.json
 .mcp.json
 DETAILS.md
 
-# Logs
+# Logs and PIDs
 logs/
 *.log
+*.pid
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+
+# Caches
+.cache/
+.eslintcache
+.turbo/
+.parcel-cache/
 
 # Editor / OS files
 .vscode/*

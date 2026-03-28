@@ -4,10 +4,9 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 PACKAGES=(
-  "packages/payspace_backend"
-  "packages/mcp"
-  "packages/gateway"
-  "packages/payspace_frontend"
+  "packages/tracking_payspace_server"
+  "packages/ckb_payspace_mcp"
+  "packages/playwright_server"
 )
 
 echo "[build] root: ${ROOT_DIR}"

@@ -1,0 +1,17 @@
+{
+  "id": "playwright",
+  "name": "Playwright",
+  "description": "Playwright MCP server lifecycle management and headless browser delivery verification. Confirms ad element presence, visibility, dimensions, and tracking pixel firing on live publisher pages before payment channel opens.",
+  "type": "capability",
+  "tags": ["browser", "verification", "delivery", "evidence", "playwright"],
+  "tasks": [
+    "start_playwright_mcp",
+    "check_playwright_mcp",
+    "verify_delivery"
+  ],
+  "task_registry": [
+    { "id": "start_playwright_mcp", "visibility": "internal" },
+    { "id": "check_playwright_mcp", "visibility": "internal" },
+    { "id": "verify_delivery", "visibility": "internal" }
+  ]
+}
